@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <AssemblyName>DigitalRune.Physics.Specialized</AssemblyName>
+    <RootNamespace>DigitalRune.Physics.Specialized</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>$(DefineConstants);TRACE;XNA;WINDOWS</DefineConstants>
+    <NoWarn>$(NoWarn);SYSLIB0003;SYSLIB0050;SYSLIB0051</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/CharacterControllers/Dynamic/DynamicCharacterController.cs">
+      <Link>CharacterControllers/Dynamic/DynamicCharacterController.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/CharacterControllers/Kinematic/CharacterControllerForceEffect.cs">
+      <Link>CharacterControllers/Kinematic/CharacterControllerForceEffect.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/CharacterControllers/Kinematic/KinematicCharacterController.cs">
+      <Link>CharacterControllers/Kinematic/KinematicCharacterController.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/CharacterControllers/Kinematic/KinematicCharacterController_Body.cs">
+      <Link>CharacterControllers/Kinematic/KinematicCharacterController_Body.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/CharacterControllers/Kinematic/KinematicCharacterController_Contacts.cs">
+      <Link>CharacterControllers/Kinematic/KinematicCharacterController_Contacts.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/CharacterControllers/Kinematic/KinematicCharacterController_Slides.cs">
+      <Link>CharacterControllers/Kinematic/KinematicCharacterController_Slides.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/NamespaceDoc.cs">
+      <Link>NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/Properties/AssemblyInfo.cs">
+      <Link>Properties/AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/Ragdolls/Ragdoll.cs">
+      <Link>Ragdolls/Ragdoll.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/Ragdolls/RagdollMotor.cs">
+      <Link>Ragdolls/RagdollMotor.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/Ragdolls/RagdollMotorMode.cs">
+      <Link>Ragdolls/RagdollMotorMode.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/Vehicles/Vehicle.cs">
+      <Link>Vehicles/Vehicle.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/Vehicles/VehicleForceEffect.cs">
+      <Link>Vehicles/VehicleForceEffect.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics.Specialized/Vehicles/Wheel.cs">
+      <Link>Vehicles/Wheel.cs</Link>
+    </Compile>
+    <ProjectReference Include="../DigitalRune.Animation/DigitalRune.Animation.csproj" />
+    <ProjectReference Include="../DigitalRune.Geometry/DigitalRune.Geometry.csproj" />
+    <ProjectReference Include="../DigitalRune.Mathematics/DigitalRune.Mathematics.csproj" />
+    <ProjectReference Include="../DigitalRune.Physics/DigitalRune.Physics.csproj" />
+    <ProjectReference Include="../DigitalRune/DigitalRune.csproj" />
+    <ProjectReference Include="$(FnaProject)" Condition="'$(GraphicsBackend)' == 'FNA'" />
+    <None Include="../../../LICENSE.TXT" Link="DigitalRune-LICENSE.TXT" CopyToOutputDirectory="PreserveNewest" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="$(MonoGameVersion)" Condition="'$(GraphicsBackend)' == 'MonoGame'" />
+  </ItemGroup>
+</Project>

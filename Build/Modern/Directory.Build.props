@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <GraphicsBackend Condition="'$(GraphicsBackend)' == ''">FNA</GraphicsBackend>
+    <MonoGameVersion Condition="'$(MonoGameVersion)' == ''">3.8.4.1</MonoGameVersion>
+    <FnaProject Condition="'$(FnaProject)' == ''">$(MSBuildThisFileDirectory)..\..\..\FNA\FNA.csproj</FnaProject>
+    <BaseIntermediateOutputPath>obj\$(GraphicsBackend)\</BaseIntermediateOutputPath>
+    <BaseOutputPath>bin\$(GraphicsBackend)\</BaseOutputPath>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj\**;bin\**</DefaultItemExcludes>
+    <DefineConstants Condition="'$(GraphicsBackend)' == 'MonoGame'">$(DefineConstants);MONOGAME</DefineConstants>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <AssemblyName>DigitalRune.Animation</AssemblyName>
+    <RootNamespace>DigitalRune.Animation</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>$(DefineConstants);TRACE;XNA;WINDOWS</DefineConstants>
+    <NoWarn>$(NoWarn);SYSLIB0003;SYSLIB0050;SYSLIB0051</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animatables/AnimatableProperty.cs">
+      <Link>Animatables/AnimatableProperty.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animatables/DelegateAnimatableProperty.cs">
+      <Link>Animatables/DelegateAnimatableProperty.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animatables/ImmediateAnimatableProperty.cs">
+      <Link>Animatables/ImmediateAnimatableProperty.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/AnimationCompositionChain.cs">
+      <Link>AnimationCompositionChain.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/AnimationCompositionChainCollection.cs">
+      <Link>AnimationCompositionChainCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/AnimationController.cs">
+      <Link>AnimationController.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/AnimationException.cs">
+      <Link>AnimationException.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/AnimationHelper.cs">
+      <Link>AnimationHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/AnimationHelper_Compression.cs">
+      <Link>AnimationHelper_Compression.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/AnimationInstance.cs">
+      <Link>AnimationInstance.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/AnimationInstanceCollection.cs">
+      <Link>AnimationInstanceCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/AnimationInstance{T}.cs">
+      <Link>AnimationInstance{T}.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/AnimationManager.cs">
+      <Link>AnimationManager.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Animation.cs">
+      <Link>Animations/Animation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/AnimationState.cs">
+      <Link>Animations/AnimationState.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Composite Animations/ColorAnimation.cs">
+      <Link>Animations/Composite Animations/ColorAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Composite Animations/QuaternionAnimation.cs">
+      <Link>Animations/Composite Animations/QuaternionAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Composite Animations/QuaternionFAnimation.cs">
+      <Link>Animations/Composite Animations/QuaternionFAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Composite Animations/SrtAnimation.cs">
+      <Link>Animations/Composite Animations/SrtAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Composite Animations/Vector2Animation.cs">
+      <Link>Animations/Composite Animations/Vector2Animation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Composite Animations/Vector2FAnimation.cs">
+      <Link>Animations/Composite Animations/Vector2FAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Composite Animations/Vector3Animation.cs">
+      <Link>Animations/Composite Animations/Vector3Animation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Composite Animations/Vector3FAnimation.cs">
+      <Link>Animations/Composite Animations/Vector3FAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Composite Animations/Vector4Animation.cs">
+      <Link>Animations/Composite Animations/Vector4Animation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Composite Animations/Vector4FAnimation.cs">
+      <Link>Animations/Composite Animations/Vector4FAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Compositing/AnimationClip.cs">
+      <Link>Animations/Compositing/AnimationClip.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Compositing/TimelineClip.cs">
+      <Link>Animations/Compositing/TimelineClip.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Compositing/TimelineGroup.cs">
+      <Link>Animations/Compositing/TimelineGroup.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Curve-Based Animations/AnimationCurve.cs">
+      <Link>Animations/Curve-Based Animations/AnimationCurve.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Curve-Based Animations/Curve2FAnimation.cs">
+      <Link>Animations/Curve-Based Animations/Curve2FAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Curve-Based Animations/Path2FAnimation.cs">
+      <Link>Animations/Curve-Based Animations/Path2FAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Curve-Based Animations/Path3FAnimation.cs">
+      <Link>Animations/Curve-Based Animations/Path3FAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Curve-Based Animations/PathAnimation.cs">
+      <Link>Animations/Curve-Based Animations/PathAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/FillBehavior.cs">
+      <Link>Animations/FillBehavior.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/ColorFromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/ColorFromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/FromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/FromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/QuaternionFFromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/QuaternionFFromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/QuaternionFromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/QuaternionFromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/SingleFromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/SingleFromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/SrtFromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/SrtFromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/Vector2FFromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/Vector2FFromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/Vector2FromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/Vector2FromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/Vector3FFromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/Vector3FFromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/Vector3FromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/Vector3FromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/Vector4FFromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/Vector4FFromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/From-To-By Animations/Vector4FromToByAnimation.cs">
+      <Link>Animations/From-To-By Animations/Vector4FromToByAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/IAnimation.cs">
+      <Link>Animations/IAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/ITimeline.cs">
+      <Link>Animations/ITimeline.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/AscendingKeyFrameComparer.cs">
+      <Link>Animations/Key-Frame Animations/AscendingKeyFrameComparer.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/ColorKeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/ColorKeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/IKeyFrame.cs">
+      <Link>Animations/Key-Frame Animations/IKeyFrame.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/KeyFrame.cs">
+      <Link>Animations/Key-Frame Animations/KeyFrame.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/KeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/KeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/KeyFrameCollection.cs">
+      <Link>Animations/Key-Frame Animations/KeyFrameCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/QuaternionFKeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/QuaternionFKeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/QuaternionKeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/QuaternionKeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/SingleKeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/SingleKeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/SrtKeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/SrtKeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/Vector2FKeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/Vector2FKeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/Vector2KeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/Vector2KeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/Vector3FKeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/Vector3FKeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/Vector3KeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/Vector3KeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/Vector4FKeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/Vector4FKeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/Key-Frame Animations/Vector4KeyFrameAnimation.cs">
+      <Link>Animations/Key-Frame Animations/Vector4KeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/LoopBehavior.cs">
+      <Link>Animations/LoopBehavior.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/NBlendAnimation/AnimatableBlendWeight.cs">
+      <Link>Animations/NBlendAnimation/AnimatableBlendWeight.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/NBlendAnimation/BlendAnimation.cs">
+      <Link>Animations/NBlendAnimation/BlendAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/NBlendAnimation/BlendAnimation{T}.cs">
+      <Link>Animations/NBlendAnimation/BlendAnimation{T}.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/NBlendAnimation/BlendGroup.cs">
+      <Link>Animations/NBlendAnimation/BlendGroup.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Animations/NBlendAnimation/BlendGroupInstance.cs">
+      <Link>Animations/NBlendAnimation/BlendGroupInstance.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/AnimatableBoneTransform.cs">
+      <Link>Character/AnimatableBoneTransform.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/IK/CcdIKSolver.cs">
+      <Link>Character/IK/CcdIKSolver.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/IK/ClosedFormIKSolver.cs">
+      <Link>Character/IK/ClosedFormIKSolver.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/IK/IKSolver.cs">
+      <Link>Character/IK/IKSolver.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/IK/JacobianTransposeIKSolver.cs">
+      <Link>Character/IK/JacobianTransposeIKSolver.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/IK/LookAtIKSolver.cs">
+      <Link>Character/IK/LookAtIKSolver.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/IK/TwoJointIKSolver.cs">
+      <Link>Character/IK/TwoJointIKSolver.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/NamespaceDoc.cs">
+      <Link>Character/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/Skeleton Animations/BoneKeyFrame.cs">
+      <Link>Character/Skeleton Animations/BoneKeyFrame.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/Skeleton Animations/SkeletonKeyFrameAnimation.cs">
+      <Link>Character/Skeleton Animations/SkeletonKeyFrameAnimation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/Skeleton Animations/SkeletonKeyFrameAnimation_Compression.cs">
+      <Link>Character/Skeleton Animations/SkeletonKeyFrameAnimation_Compression.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/Skeleton Mapping/BoneMapper.cs">
+      <Link>Character/Skeleton Mapping/BoneMapper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/Skeleton Mapping/BoneMapperCollection.cs">
+      <Link>Character/Skeleton Mapping/BoneMapperCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/Skeleton Mapping/ChainBoneMapper.cs">
+      <Link>Character/Skeleton Mapping/ChainBoneMapper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/Skeleton Mapping/DirectBoneMapper.cs">
+      <Link>Character/Skeleton Mapping/DirectBoneMapper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/Skeleton Mapping/SkeletonMapper.cs">
+      <Link>Character/Skeleton Mapping/SkeletonMapper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/Skeleton Mapping/UpperBackBoneMapper.cs">
+      <Link>Character/Skeleton Mapping/UpperBackBoneMapper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/Skeleton.cs">
+      <Link>Character/Skeleton.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/SkeletonBoneAccessor.cs">
+      <Link>Character/SkeletonBoneAccessor.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/SkeletonHelper.cs">
+      <Link>Character/SkeletonHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/SkeletonPose.cs">
+      <Link>Character/SkeletonPose.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Character/SrtTransform.cs">
+      <Link>Character/SrtTransform.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Content Pipeline/BlendGroupReader.cs">
+      <Link>Content Pipeline/BlendGroupReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Content Pipeline/DummyTimeline.cs">
+      <Link>Content Pipeline/DummyTimeline.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Content Pipeline/KeyFrameCollectionReader.cs">
+      <Link>Content Pipeline/KeyFrameCollectionReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Content Pipeline/NamespaceDoc.cs">
+      <Link>Content Pipeline/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Content Pipeline/SkeletonKeyFrameAnimationReader.cs">
+      <Link>Content Pipeline/SkeletonKeyFrameAnimationReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Content Pipeline/SkeletonReader.cs">
+      <Link>Content Pipeline/SkeletonReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Content Pipeline/SrtTransformReader.cs">
+      <Link>Content Pipeline/SrtTransformReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Content Pipeline/TimelineGroupReader.cs">
+      <Link>Content Pipeline/TimelineGroupReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/BackEase.cs">
+      <Link>Easing/BackEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/BounceEase.cs">
+      <Link>Easing/BounceEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/CircleEase.cs">
+      <Link>Easing/CircleEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/CubicEase.cs">
+      <Link>Easing/CubicEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/EasingFunction.cs">
+      <Link>Easing/EasingFunction.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/EasingMode.cs">
+      <Link>Easing/EasingMode.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/ElasticEase.cs">
+      <Link>Easing/ElasticEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/ExponentialEase.cs">
+      <Link>Easing/ExponentialEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/HermiteEase.cs">
+      <Link>Easing/HermiteEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/IEasingFunction.cs">
+      <Link>Easing/IEasingFunction.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/LogarithmicEase.cs">
+      <Link>Easing/LogarithmicEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/NamespaceDoc.cs">
+      <Link>Easing/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/PowerEase.cs">
+      <Link>Easing/PowerEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/QuadraticEase.cs">
+      <Link>Easing/QuadraticEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/QuarticEase.cs">
+      <Link>Easing/QuarticEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/QuinticEase.cs">
+      <Link>Easing/QuinticEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Easing/SineEase.cs">
+      <Link>Easing/SineEase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/HandoffBehavior.cs">
+      <Link>HandoffBehavior.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/IAnimationCompositionChain.cs">
+      <Link>IAnimationCompositionChain.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/IAnimationService.cs">
+      <Link>IAnimationService.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/InvalidAnimationException.cs">
+      <Link>InvalidAnimationException.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Properties/AssemblyInfo.cs">
+      <Link>Properties/AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/ReadOnlyAnimationInstanceCollection.cs">
+      <Link>ReadOnlyAnimationInstanceCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/ColorTraits.cs">
+      <Link>Traits/ColorTraits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/IAnimationValueTraits.cs">
+      <Link>Traits/IAnimationValueTraits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/NamespaceDoc.cs">
+      <Link>Traits/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/QuaternionFTraits.cs">
+      <Link>Traits/QuaternionFTraits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/QuaternionTraits.cs">
+      <Link>Traits/QuaternionTraits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/SingleTraits.cs">
+      <Link>Traits/SingleTraits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/SkeletonPoseTraits.cs">
+      <Link>Traits/SkeletonPoseTraits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/SrtTransformTraits.cs">
+      <Link>Traits/SrtTransformTraits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/Vector2FTraits.cs">
+      <Link>Traits/Vector2FTraits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/Vector2Traits.cs">
+      <Link>Traits/Vector2Traits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/Vector3FTraits.cs">
+      <Link>Traits/Vector3FTraits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/Vector3Traits.cs">
+      <Link>Traits/Vector3Traits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/Vector4FTraits.cs">
+      <Link>Traits/Vector4FTraits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Traits/Vector4Traits.cs">
+      <Link>Traits/Vector4Traits.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Transitions/AnimationTransition.cs">
+      <Link>Transitions/AnimationTransition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Transitions/AnimationTransitions.cs">
+      <Link>Transitions/AnimationTransitions.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Transitions/ComposeTransition.cs">
+      <Link>Transitions/ComposeTransition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Transitions/FadeInAndComposeTransition.cs">
+      <Link>Transitions/FadeInAndComposeTransition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Transitions/FadeInAndReplaceAllTransition.cs">
+      <Link>Transitions/FadeInAndReplaceAllTransition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Transitions/FadeInAndReplaceTransition.cs">
+      <Link>Transitions/FadeInAndReplaceTransition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Transitions/FadeOutTransition.cs">
+      <Link>Transitions/FadeOutTransition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Transitions/NamespaceDoc.cs">
+      <Link>Transitions/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Transitions/ReplaceAllTransition.cs">
+      <Link>Transitions/ReplaceAllTransition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Transitions/ReplaceTransition.cs">
+      <Link>Transitions/ReplaceTransition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Animation/Transitions/SnapshotAndReplaceAllTransition.cs">
+      <Link>Transitions/SnapshotAndReplaceAllTransition.cs</Link>
+    </Compile>
+    <ProjectReference Include="../DigitalRune.Geometry/DigitalRune.Geometry.csproj" />
+    <ProjectReference Include="../DigitalRune.Mathematics/DigitalRune.Mathematics.csproj" />
+    <ProjectReference Include="../DigitalRune/DigitalRune.csproj" />
+    <ProjectReference Include="$(FnaProject)" Condition="'$(GraphicsBackend)' == 'FNA'" />
+    <None Include="../../../LICENSE.TXT" Link="DigitalRune-LICENSE.TXT" CopyToOutputDirectory="PreserveNewest" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="$(MonoGameVersion)" Condition="'$(GraphicsBackend)' == 'MonoGame'" />
+  </ItemGroup>
+</Project>

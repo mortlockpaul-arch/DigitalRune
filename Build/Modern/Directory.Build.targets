@@ -1,0 +1,5 @@
+<Project>
+  <Target Name="ValidateGraphicsBackend" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(GraphicsBackend)' != 'FNA' and '$(GraphicsBackend)' != 'MonoGame'" Text="GraphicsBackend must be FNA or MonoGame." />
+  </Target>
+</Project>

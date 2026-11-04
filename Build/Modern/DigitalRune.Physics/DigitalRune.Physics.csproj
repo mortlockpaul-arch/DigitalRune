@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <AssemblyName>DigitalRune.Physics</AssemblyName>
+    <RootNamespace>DigitalRune.Physics</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>$(DefineConstants);TRACE;XNA</DefineConstants>
+    <NoWarn>$(NoWarn);SYSLIB0003;SYSLIB0050;SYSLIB0051</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../../Source/DigitalRune.Physics/CollisionResponseFilter.cs">
+      <Link>CollisionResponseFilter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/AngularLimit.cs">
+      <Link>Constraints/AngularLimit.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/AngularVelocityMotor.cs">
+      <Link>Constraints/AngularVelocityMotor.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/BallJoint.cs">
+      <Link>Constraints/BallJoint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/Constraint.cs">
+      <Link>Constraints/Constraint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/ConstraintCollection.cs">
+      <Link>Constraints/ConstraintCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/ContactConstraint.cs">
+      <Link>Constraints/ContactConstraint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/CylindricalJoint.cs">
+      <Link>Constraints/CylindricalJoint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/DistanceLimit.cs">
+      <Link>Constraints/DistanceLimit.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/EulerMotor.cs">
+      <Link>Constraints/EulerMotor.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/FixedJoint.cs">
+      <Link>Constraints/FixedJoint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/Hinge2Joint.cs">
+      <Link>Constraints/Hinge2Joint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/HingeJoint.cs">
+      <Link>Constraints/HingeJoint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/IConstraint.cs">
+      <Link>Constraints/IConstraint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/LimitState.cs">
+      <Link>Constraints/LimitState.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/LinearLimit.cs">
+      <Link>Constraints/LinearLimit.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/LinearVelocityMotor.cs">
+      <Link>Constraints/LinearVelocityMotor.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/Misc/Constraint1D.cs">
+      <Link>Constraints/Misc/Constraint1D.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/Misc/ConstraintHelper.cs">
+      <Link>Constraints/Misc/ConstraintHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/NamespaceDoc.cs">
+      <Link>Constraints/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/NoRotationConstraint.cs">
+      <Link>Constraints/NoRotationConstraint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/PlaneLimit.cs">
+      <Link>Constraints/PlaneLimit.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/PointOnLineConstraint.cs">
+      <Link>Constraints/PointOnLineConstraint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/PointOnPlaneConstraint.cs">
+      <Link>Constraints/PointOnPlaneConstraint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/PositionMotor.cs">
+      <Link>Constraints/PositionMotor.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/PrismaticJoint.cs">
+      <Link>Constraints/PrismaticJoint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/QuaternionMotor.cs">
+      <Link>Constraints/QuaternionMotor.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/Solvers/ConstraintSolver.cs">
+      <Link>Constraints/Solvers/ConstraintSolver.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/Solvers/SequentialImpulseBasedSolver.cs">
+      <Link>Constraints/Solvers/SequentialImpulseBasedSolver.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/TwistSwingLimit.cs">
+      <Link>Constraints/TwistSwingLimit.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Constraints/UniversalJoint.cs">
+      <Link>Constraints/UniversalJoint.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/Buoyancy.cs">
+      <Link>ForceEffects/Buoyancy.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/DampedSpring.cs">
+      <Link>ForceEffects/DampedSpring.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/Damping.cs">
+      <Link>ForceEffects/Damping.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/Explosion.cs">
+      <Link>ForceEffects/Explosion.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/ForceEffect.cs">
+      <Link>ForceEffects/ForceEffect.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/ForceEffectCollection.cs">
+      <Link>ForceEffects/ForceEffectCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/ForceField.cs">
+      <Link>ForceEffects/ForceField.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/GeometricAreaOfEffect.cs">
+      <Link>ForceEffects/GeometricAreaOfEffect.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/GlobalAreaOfEffect.cs">
+      <Link>ForceEffects/GlobalAreaOfEffect.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/Gravity.cs">
+      <Link>ForceEffects/Gravity.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/IAreaOfEffect.cs">
+      <Link>ForceEffects/IAreaOfEffect.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/ListAreaOfEffect.cs">
+      <Link>ForceEffects/ListAreaOfEffect.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/NamespaceDoc.cs">
+      <Link>ForceEffects/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/ForceEffects/SetFilter.cs">
+      <Link>ForceEffects/SetFilter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Islands/SimulationIsland.cs">
+      <Link>Islands/SimulationIsland.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Islands/SimulationIslandManager.cs">
+      <Link>Islands/SimulationIslandManager.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Islands/UnionFinder.cs">
+      <Link>Islands/UnionFinder.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Mass/MassFrame.cs">
+      <Link>Mass/MassFrame.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Mass/MassHelper.cs">
+      <Link>Mass/MassHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Mass/MassHelper_Polyhedra.cs">
+      <Link>Mass/MassHelper_Polyhedra.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Mass/MassHelper_Shapes.cs">
+      <Link>Mass/MassHelper_Shapes.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Materials/CompositeMaterial.cs">
+      <Link>Materials/CompositeMaterial.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Materials/IMaterial.cs">
+      <Link>Materials/IMaterial.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Materials/IMaterialPropertyCombiner.cs">
+      <Link>Materials/IMaterialPropertyCombiner.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Materials/MaterialProperties.cs">
+      <Link>Materials/MaterialProperties.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Materials/MaterialPropertyCombiner.cs">
+      <Link>Materials/MaterialPropertyCombiner.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Materials/NamespaceDoc.cs">
+      <Link>Materials/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Materials/UniformMaterial.cs">
+      <Link>Materials/UniformMaterial.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/MotionType.cs">
+      <Link>MotionType.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/NamespaceDoc.cs">
+      <Link>NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/PhysicsException.cs">
+      <Link>PhysicsException.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Properties/AssemblyInfo.cs">
+      <Link>Properties/AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/RigidBody.cs">
+      <Link>RigidBody.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/RigidBodyCollection.cs">
+      <Link>RigidBodyCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/RigidBody_Forces.cs">
+      <Link>RigidBody_Forces.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/RigidBody_ICloneable.cs">
+      <Link>RigidBody_ICloneable.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/RigidBody_IGeometricObject.cs">
+      <Link>RigidBody_IGeometricObject.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/RigidBody_Mass.cs">
+      <Link>RigidBody_Mass.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/RigidBody_Sleeping.cs">
+      <Link>RigidBody_Sleeping.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/RigidBody_Velocities.cs">
+      <Link>RigidBody_Velocities.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Settings/ConstraintSettings.cs">
+      <Link>Settings/ConstraintSettings.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Settings/MotionSettings.cs">
+      <Link>Settings/MotionSettings.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Settings/NamespaceDoc.cs">
+      <Link>Settings/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Settings/SimulationSettings.cs">
+      <Link>Settings/SimulationSettings.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Settings/SleepingSettings.cs">
+      <Link>Settings/SleepingSettings.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Settings/TimingSettings.cs">
+      <Link>Settings/TimingSettings.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Simulation.cs">
+      <Link>Simulation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Physics/Simulation_Filtering.cs">
+      <Link>Simulation_Filtering.cs</Link>
+    </Compile>
+    <ProjectReference Include="../DigitalRune.Geometry/DigitalRune.Geometry.csproj" />
+    <ProjectReference Include="../DigitalRune.Mathematics/DigitalRune.Mathematics.csproj" />
+    <ProjectReference Include="../DigitalRune/DigitalRune.csproj" />
+    <ProjectReference Include="$(FnaProject)" Condition="'$(GraphicsBackend)' == 'FNA'" />
+    <None Include="../../../LICENSE.TXT" Link="DigitalRune-LICENSE.TXT" CopyToOutputDirectory="PreserveNewest" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="$(MonoGameVersion)" Condition="'$(GraphicsBackend)' == 'MonoGame'" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <AssemblyName>DigitalRune.Geometry</AssemblyName>
+    <RootNamespace>DigitalRune.Geometry</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>$(DefineConstants);TRACE;WINDOWS;XNA;POOL_ENUMERABLES</DefineConstants>
+    <NoWarn>$(NoWarn);SYSLIB0003;SYSLIB0050;SYSLIB0051</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/BoxBoxAlgorithm.cs">
+      <Link>Collisions/Algorithms/BoxBoxAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/BoxSphereAlgorithm.cs">
+      <Link>Collisions/Algorithms/BoxSphereAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/CCD/CcdHelper.cs">
+      <Link>Collisions/Algorithms/CCD/CcdHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/CCD/CcdHelper_CAFull.cs">
+      <Link>Collisions/Algorithms/CCD/CcdHelper_CAFull.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/CCD/CcdHelper_CALinear.cs">
+      <Link>Collisions/Algorithms/CCD/CcdHelper_CALinear.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/CCD/CcdHelper_LinearConvexCast.cs">
+      <Link>Collisions/Algorithms/CCD/CcdHelper_LinearConvexCast.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/CollisionAlgorithm.cs">
+      <Link>Collisions/Algorithms/CollisionAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/CombinedCollisionAlgorithm.cs">
+      <Link>Collisions/Algorithms/CombinedCollisionAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/CompositeShapes/CompositeShapeAlgorithm.cs">
+      <Link>Collisions/Algorithms/CompositeShapes/CompositeShapeAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/CompositeShapes/CompositeShapeAlgorithm_ClosestPoints.cs">
+      <Link>Collisions/Algorithms/CompositeShapes/CompositeShapeAlgorithm_ClosestPoints.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/CompositeShapes/RayCompositeAlgorithm.cs">
+      <Link>Collisions/Algorithms/CompositeShapes/RayCompositeAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/Gjk/Gjk.cs">
+      <Link>Collisions/Algorithms/Gjk/Gjk.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/Gjk/GjkSimplexSolver.cs">
+      <Link>Collisions/Algorithms/Gjk/GjkSimplexSolver.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/HeightField/HeightFieldAlgorithm.cs">
+      <Link>Collisions/Algorithms/HeightField/HeightFieldAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/HeightField/HeightFieldAlgorithm_Fast.cs">
+      <Link>Collisions/Algorithms/HeightField/HeightFieldAlgorithm_Fast.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/HeightField/RayHeightFieldAlgorithm.cs">
+      <Link>Collisions/Algorithms/HeightField/RayHeightFieldAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/InfiniteShapeAlgorithm.cs">
+      <Link>Collisions/Algorithms/InfiniteShapeAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/LineAlgorithm.cs">
+      <Link>Collisions/Algorithms/LineAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/MinkowskiPortalRefinement.cs">
+      <Link>Collisions/Algorithms/MinkowskiPortalRefinement.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/NamespaceDoc.cs">
+      <Link>Collisions/Algorithms/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/NoCollisionAlgorithm.cs">
+      <Link>Collisions/Algorithms/NoCollisionAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/PlaneBoxAlgorithm.cs">
+      <Link>Collisions/Algorithms/PlaneBoxAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/PlaneConvexAlgorithm.cs">
+      <Link>Collisions/Algorithms/PlaneConvexAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/PlanePointAlgorithm.cs">
+      <Link>Collisions/Algorithms/PlanePointAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/PlaneRayAlgorithm.cs">
+      <Link>Collisions/Algorithms/PlaneRayAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/PlaneSphereAlgorithm.cs">
+      <Link>Collisions/Algorithms/PlaneSphereAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/RayBoxAlgorithm.cs">
+      <Link>Collisions/Algorithms/RayBoxAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/RayConvexAlgorithm.cs">
+      <Link>Collisions/Algorithms/RayConvexAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/RaySphereAlgorithm.cs">
+      <Link>Collisions/Algorithms/RaySphereAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/RayTriangleAlgorithm.cs">
+      <Link>Collisions/Algorithms/RayTriangleAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/SphereSphereAlgorithm.cs">
+      <Link>Collisions/Algorithms/SphereSphereAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/TetrahedronAlgorithm.cs">
+      <Link>Collisions/Algorithms/TetrahedronAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/TransformedShapeAlgorithm.cs">
+      <Link>Collisions/Algorithms/TransformedShapeAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/TriangleMeshShapes/RayTriangleMeshAlgorithm.cs">
+      <Link>Collisions/Algorithms/TriangleMeshShapes/RayTriangleMeshAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/TriangleMeshShapes/TriangleMeshAlgorithm.cs">
+      <Link>Collisions/Algorithms/TriangleMeshShapes/TriangleMeshAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/TriangleMeshShapes/TriangleMeshAlgorithm_ClosestPoints.cs">
+      <Link>Collisions/Algorithms/TriangleMeshShapes/TriangleMeshAlgorithm_ClosestPoints.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/TriangleMeshShapes/TriangleMeshAlgorithm_TriangleVsTriangle.cs">
+      <Link>Collisions/Algorithms/TriangleMeshShapes/TriangleMeshAlgorithm_TriangleVsTriangle.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Algorithms/TriangleTriangleAlgorithm.cs">
+      <Link>Collisions/Algorithms/TriangleTriangleAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/CollisionAlgorithmMatrix.cs">
+      <Link>Collisions/CollisionAlgorithmMatrix.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/CollisionDetection.cs">
+      <Link>Collisions/CollisionDetection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/CollisionDetectionBroadPhase.cs">
+      <Link>Collisions/CollisionDetectionBroadPhase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/CollisionDomain.cs">
+      <Link>Collisions/CollisionDomain.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/CollisionFilter.cs">
+      <Link>Collisions/CollisionFilter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/CollisionObject.cs">
+      <Link>Collisions/CollisionObject.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/CollisionObjectCollection.cs">
+      <Link>Collisions/CollisionObjectCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/CollisionObjectType.cs">
+      <Link>Collisions/CollisionObjectType.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/CollisionQueryType.cs">
+      <Link>Collisions/CollisionQueryType.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/Contact.cs">
+      <Link>Collisions/Contact.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/ContactHelper.cs">
+      <Link>Collisions/ContactHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/ContactReducer.cs">
+      <Link>Collisions/ContactReducer.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/ContactSet.cs">
+      <Link>Collisions/ContactSet.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/ContactSetCollection.cs">
+      <Link>Collisions/ContactSetCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/ContinuousCollisionDetectionMode.cs">
+      <Link>Collisions/ContinuousCollisionDetectionMode.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/ICollisionFilter.cs">
+      <Link>Collisions/ICollisionFilter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/IContactFilter.cs">
+      <Link>Collisions/IContactFilter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Collisions/NamespaceDoc.cs">
+      <Link>Collisions/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/AabbReader.cs">
+      <Link>Content Pipeline/AabbReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/AabbTreeReader.cs">
+      <Link>Content Pipeline/AabbTreeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/AdaptiveAabbTreeReader.cs">
+      <Link>Content Pipeline/AdaptiveAabbTreeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/BoxShapeReader.cs">
+      <Link>Content Pipeline/BoxShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/CapsuleShapeReader.cs">
+      <Link>Content Pipeline/CapsuleShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/CircleShapeReader.cs">
+      <Link>Content Pipeline/CircleShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/CompositeShapeReader.cs">
+      <Link>Content Pipeline/CompositeShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/CompressedAabbTreeReader.cs">
+      <Link>Content Pipeline/CompressedAabbTreeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/ConeShapeReader.cs">
+      <Link>Content Pipeline/ConeShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/ConvexHullOfPointsReader.cs">
+      <Link>Content Pipeline/ConvexHullOfPointsReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/ConvexHullOfShapesReader.cs">
+      <Link>Content Pipeline/ConvexHullOfShapesReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/ConvexPolyhedronReader.cs">
+      <Link>Content Pipeline/ConvexPolyhedronReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/CylinderShapeReader.cs">
+      <Link>Content Pipeline/CylinderShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/DirectionalLookupTableFReader.cs">
+      <Link>Content Pipeline/DirectionalLookupTableFReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/DualPartitionReader.cs">
+      <Link>Content Pipeline/DualPartitionReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/DynamicAabbTreeReader.cs">
+      <Link>Content Pipeline/DynamicAabbTreeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/EmptyShapeReader.cs">
+      <Link>Content Pipeline/EmptyShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/GeometricObjectReader.cs">
+      <Link>Content Pipeline/GeometricObjectReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/HeightFieldReader.cs">
+      <Link>Content Pipeline/HeightFieldReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/InfiniteShapeReader.cs">
+      <Link>Content Pipeline/InfiniteShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/LineSegmentShapeReader.cs">
+      <Link>Content Pipeline/LineSegmentShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/LineShapeReader.cs">
+      <Link>Content Pipeline/LineShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/MinkowskiDifferenceShapeReader.cs">
+      <Link>Content Pipeline/MinkowskiDifferenceShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/MinkowskiSumShapeReader.cs">
+      <Link>Content Pipeline/MinkowskiSumShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/NamespaceDoc.cs">
+      <Link>Content Pipeline/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/OrthographicViewVolumeReader.cs">
+      <Link>Content Pipeline/OrthographicViewVolumeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/PerspectiveViewVolumeReader.cs">
+      <Link>Content Pipeline/PerspectiveViewVolumeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/PlaneShapeReader.cs">
+      <Link>Content Pipeline/PlaneShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/PointShapeReader.cs">
+      <Link>Content Pipeline/PointShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/PoseDReader.cs">
+      <Link>Content Pipeline/PoseDReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/PoseReader.cs">
+      <Link>Content Pipeline/PoseReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/RayShapeReader.cs">
+      <Link>Content Pipeline/RayShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/RectangleShapeReader.cs">
+      <Link>Content Pipeline/RectangleShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/ScaledConvexShapeReader.cs">
+      <Link>Content Pipeline/ScaledConvexShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/SphereShapeReader.cs">
+      <Link>Content Pipeline/SphereShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/SweepAndPruneSpaceReader.cs">
+      <Link>Content Pipeline/SweepAndPruneSpaceReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/TransformedShapeReader.cs">
+      <Link>Content Pipeline/TransformedShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/TriangleMeshReader.cs">
+      <Link>Content Pipeline/TriangleMeshReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/TriangleMeshShapeReader.cs">
+      <Link>Content Pipeline/TriangleMeshShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/TriangleShapeReader.cs">
+      <Link>Content Pipeline/TriangleShapeReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Content Pipeline/VertexAdjacencyReader.cs">
+      <Link>Content Pipeline/VertexAdjacencyReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/DirectionalLookupTableF.cs">
+      <Link>DirectionalLookupTableF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometricObject.cs">
+      <Link>GeometricObject.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryException.cs">
+      <Link>GeometryException.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryHelper.cs">
+      <Link>GeometryHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryHelper_Boxes.cs">
+      <Link>GeometryHelper_Boxes.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryHelper_Capsules.cs">
+      <Link>GeometryHelper_Capsules.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryHelper_Casts.cs">
+      <Link>GeometryHelper_Casts.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryHelper_Lines.cs">
+      <Link>GeometryHelper_Lines.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryHelper_Meshes.cs">
+      <Link>GeometryHelper_Meshes.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryHelper_Planes.cs">
+      <Link>GeometryHelper_Planes.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryHelper_Spheres.cs">
+      <Link>GeometryHelper_Spheres.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryHelper_SupportMapping.cs">
+      <Link>GeometryHelper_SupportMapping.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryHelper_TriangleTriangle.cs">
+      <Link>GeometryHelper_TriangleTriangle.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GeometryHelper_Triangles.cs">
+      <Link>GeometryHelper_Triangles.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/IGeometricObject.cs">
+      <Link>IGeometricObject.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Convex Decomposition/CDIsland.cs">
+      <Link>Meshes/Convex Decomposition/CDIsland.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Convex Decomposition/CDIslandLink.cs">
+      <Link>Meshes/Convex Decomposition/CDIslandLink.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Convex Decomposition/CDTriangle.cs">
+      <Link>Meshes/Convex Decomposition/CDTriangle.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Convex Decomposition/ConvexDecomposition.cs">
+      <Link>Meshes/Convex Decomposition/ConvexDecomposition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/ConvexHullBuilder.cs">
+      <Link>Meshes/ConvexHullBuilder.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Dcel/DcelEdge.cs">
+      <Link>Meshes/Dcel/DcelEdge.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Dcel/DcelFace.cs">
+      <Link>Meshes/Dcel/DcelFace.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Dcel/DcelMesh.cs">
+      <Link>Meshes/Dcel/DcelMesh.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Dcel/DcelMesh_Collinearity.cs">
+      <Link>Meshes/Dcel/DcelMesh_Collinearity.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Dcel/DcelMesh_Convex.cs">
+      <Link>Meshes/Dcel/DcelMesh_Convex.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Dcel/DcelMesh_IsXxx.cs">
+      <Link>Meshes/Dcel/DcelMesh_IsXxx.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Dcel/DcelMesh_Operations.cs">
+      <Link>Meshes/Dcel/DcelMesh_Operations.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Dcel/DcelMesh_Traversal.cs">
+      <Link>Meshes/Dcel/DcelMesh_Traversal.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Dcel/DcelMesh_TriangleMesh.cs">
+      <Link>Meshes/Dcel/DcelMesh_TriangleMesh.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Dcel/DcelVertex.cs">
+      <Link>Meshes/Dcel/DcelVertex.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/ITriangleMesh.cs">
+      <Link>Meshes/ITriangleMesh.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/NamespaceDoc.cs">
+      <Link>Meshes/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/TriangleMesh.cs">
+      <Link>Meshes/TriangleMesh.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/Triangulator.cs">
+      <Link>Meshes/Triangulator.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Meshes/VertexAdjacency.cs">
+      <Link>Meshes/VertexAdjacency.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/NamespaceDoc.cs">
+      <Link>NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/AabbTreeBuilder.cs">
+      <Link>Partitioning/BVH/AabbTreeBuilder.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/AabbTreeHelper.cs">
+      <Link>Partitioning/BVH/AabbTreeHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree.cs">
+      <Link>Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_Build.cs">
+      <Link>Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_Build.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_Node.cs">
+      <Link>Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_Node.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_Queries.cs">
+      <Link>Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_Queries.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_Queries_Pooled.cs">
+      <Link>Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_Queries_Pooled.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_TreeVsTree.cs">
+      <Link>Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_TreeVsTree.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_TreeVsTree_Pooled.cs">
+      <Link>Partitioning/BVH/Adaptive BVH/AdaptiveAabbTree_TreeVsTree_Pooled.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Compressed BVH/CompressedAabbTree.cs">
+      <Link>Partitioning/BVH/Compressed BVH/CompressedAabbTree.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Compressed BVH/CompressedAabbTree_Build.cs">
+      <Link>Partitioning/BVH/Compressed BVH/CompressedAabbTree_Build.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Compressed BVH/CompressedAabbTree_Node.cs">
+      <Link>Partitioning/BVH/Compressed BVH/CompressedAabbTree_Node.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Compressed BVH/CompressedAabbTree_Queries.cs">
+      <Link>Partitioning/BVH/Compressed BVH/CompressedAabbTree_Queries.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Compressed BVH/CompressedAabbTree_Queries_Pooled.cs">
+      <Link>Partitioning/BVH/Compressed BVH/CompressedAabbTree_Queries_Pooled.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Compressed BVH/CompressedAabbTree_TreeVsTree.cs">
+      <Link>Partitioning/BVH/Compressed BVH/CompressedAabbTree_TreeVsTree.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Compressed BVH/CompressedAabbTree_TreeVsTree_Pooled.cs">
+      <Link>Partitioning/BVH/Compressed BVH/CompressedAabbTree_TreeVsTree_Pooled.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Dynamic BVH/DynamicAabbTree.cs">
+      <Link>Partitioning/BVH/Dynamic BVH/DynamicAabbTree.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Dynamic BVH/DynamicAabbTree_Build.cs">
+      <Link>Partitioning/BVH/Dynamic BVH/DynamicAabbTree_Build.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Dynamic BVH/DynamicAabbTree_Node.cs">
+      <Link>Partitioning/BVH/Dynamic BVH/DynamicAabbTree_Node.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Dynamic BVH/DynamicAabbTree_Queries.cs">
+      <Link>Partitioning/BVH/Dynamic BVH/DynamicAabbTree_Queries.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Dynamic BVH/DynamicAabbTree_Queries_Pooled.cs">
+      <Link>Partitioning/BVH/Dynamic BVH/DynamicAabbTree_Queries_Pooled.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Dynamic BVH/DynamicAabbTree_TreeVsTree.cs">
+      <Link>Partitioning/BVH/Dynamic BVH/DynamicAabbTree_TreeVsTree.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Dynamic BVH/DynamicAabbTree_TreeVsTree_Pooled.cs">
+      <Link>Partitioning/BVH/Dynamic BVH/DynamicAabbTree_TreeVsTree_Pooled.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/IAabbTreeNode.cs">
+      <Link>Partitioning/BVH/IAabbTreeNode.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Static BVH/AabbTree.cs">
+      <Link>Partitioning/BVH/Static BVH/AabbTree.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Static BVH/AabbTree_Build.cs">
+      <Link>Partitioning/BVH/Static BVH/AabbTree_Build.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Static BVH/AabbTree_Node.cs">
+      <Link>Partitioning/BVH/Static BVH/AabbTree_Node.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Static BVH/AabbTree_Queries.cs">
+      <Link>Partitioning/BVH/Static BVH/AabbTree_Queries.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Static BVH/AabbTree_Queries_Pooled.cs">
+      <Link>Partitioning/BVH/Static BVH/AabbTree_Queries_Pooled.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Static BVH/AabbTree_TreeVsTree.cs">
+      <Link>Partitioning/BVH/Static BVH/AabbTree_TreeVsTree.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BVH/Static BVH/AabbTree_TreeVsTree_Pooled.cs">
+      <Link>Partitioning/BVH/Static BVH/AabbTree_TreeVsTree_Pooled.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BasePartition.cs">
+      <Link>Partitioning/BasePartition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BasePartition_Queries.cs">
+      <Link>Partitioning/BasePartition_Queries.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/BasePartition_Queries_Pooled.cs">
+      <Link>Partitioning/BasePartition_Queries_Pooled.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/ClosestPointCallbackWrapper.cs">
+      <Link>Partitioning/ClosestPointCallbackWrapper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/DebugSpatialPartition.cs">
+      <Link>Partitioning/DebugSpatialPartition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/DelegatePairFilter.cs">
+      <Link>Partitioning/DelegatePairFilter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/Dual Partition/DualPartition.cs">
+      <Link>Partitioning/Dual Partition/DualPartition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/Dual Partition/DualPartition_Queries.cs">
+      <Link>Partitioning/Dual Partition/DualPartition_Queries.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/Dual Partition/DualPartition_TreeVsTree.cs">
+      <Link>Partitioning/Dual Partition/DualPartition_TreeVsTree.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/IPairFilter.cs">
+      <Link>Partitioning/IPairFilter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/ISpatialPartition.cs">
+      <Link>Partitioning/ISpatialPartition.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/ISupportBroadPhase.cs">
+      <Link>Partitioning/ISupportBroadPhase.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/ISupportClosestPointQueries.cs">
+      <Link>Partitioning/ISupportClosestPointQueries.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/ISupportFrustumCulling.cs">
+      <Link>Partitioning/ISupportFrustumCulling.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/NamespaceDoc.cs">
+      <Link>Partitioning/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/Octree.cs">
+      <Link>Partitioning/Octree.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/SAP/SweepAndPruneSpace.cs">
+      <Link>Partitioning/SAP/SweepAndPruneSpace.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/SAP/SweepAndPruneSpace_NestedTypes.cs">
+      <Link>Partitioning/SAP/SweepAndPruneSpace_NestedTypes.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Partitioning/SAP/SweepAndPruneSpace_Queries.cs">
+      <Link>Partitioning/SAP/SweepAndPruneSpace_Queries.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Pose.cs">
+      <Link>Pose.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/PoseD.cs">
+      <Link>PoseD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Properties/AssemblyInfo.cs">
+      <Link>Properties/AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/ResourcePools.cs">
+      <Link>ResourcePools.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/ResourcePools{T}.cs">
+      <Link>ResourcePools{T}.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/Aabb.cs">
+      <Link>Shapes/Aabb.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/BoxShape.cs">
+      <Link>Shapes/BoxShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/CapsuleShape.cs">
+      <Link>Shapes/CapsuleShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/CircleShape.cs">
+      <Link>Shapes/CircleShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/CompositeShape.cs">
+      <Link>Shapes/CompositeShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/ConeShape.cs">
+      <Link>Shapes/ConeShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/ConvexHullOfPoints.cs">
+      <Link>Shapes/ConvexHullOfPoints.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/ConvexHullOfShapes.cs">
+      <Link>Shapes/ConvexHullOfShapes.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/ConvexPolyhedron.cs">
+      <Link>Shapes/ConvexPolyhedron.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/ConvexShape.cs">
+      <Link>Shapes/ConvexShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/CylinderShape.cs">
+      <Link>Shapes/CylinderShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/EmptyShape.cs">
+      <Link>Shapes/EmptyShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/HeightField.cs">
+      <Link>Shapes/HeightField.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/InfiniteShape.cs">
+      <Link>Shapes/InfiniteShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/Line.cs">
+      <Link>Shapes/Line.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/LineSegment.cs">
+      <Link>Shapes/LineSegment.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/LineSegmentShape.cs">
+      <Link>Shapes/LineSegmentShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/LineShape.cs">
+      <Link>Shapes/LineShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/MinkowskiDifferenceShape.cs">
+      <Link>Shapes/MinkowskiDifferenceShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/MinkowskiSumShape.cs">
+      <Link>Shapes/MinkowskiSumShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/NamespaceDoc.cs">
+      <Link>Shapes/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/OrthographicViewVolume.cs">
+      <Link>Shapes/OrthographicViewVolume.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/PerspectiveViewVolume.cs">
+      <Link>Shapes/PerspectiveViewVolume.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/Plane.cs">
+      <Link>Shapes/Plane.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/PlaneShape.cs">
+      <Link>Shapes/PlaneShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/PointShape.cs">
+      <Link>Shapes/PointShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/Ray.cs">
+      <Link>Shapes/Ray.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/RayShape.cs">
+      <Link>Shapes/RayShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/RectangleShape.cs">
+      <Link>Shapes/RectangleShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/ScaledConvexShape.cs">
+      <Link>Shapes/ScaledConvexShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/Shape.cs">
+      <Link>Shapes/Shape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/ShapeChangedEventArgs.cs">
+      <Link>Shapes/ShapeChangedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/SphereShape.cs">
+      <Link>Shapes/SphereShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/TestMinkowskiSumShape.cs">
+      <Link>Shapes/TestMinkowskiSumShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/TransformedShape.cs">
+      <Link>Shapes/TransformedShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/Triangle.cs">
+      <Link>Shapes/Triangle.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/TriangleMeshShape.cs">
+      <Link>Shapes/TriangleMeshShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/TriangleShape.cs">
+      <Link>Shapes/TriangleShape.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/Shapes/ViewVolume.cs">
+      <Link>Shapes/ViewVolume.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Geometry/TestGeometricObject.cs">
+      <Link>TestGeometricObject.cs</Link>
+    </Compile>
+    <ProjectReference Include="../DigitalRune.Mathematics/DigitalRune.Mathematics.csproj" />
+    <ProjectReference Include="../DigitalRune/DigitalRune.csproj" />
+    <ProjectReference Include="$(FnaProject)" Condition="'$(GraphicsBackend)' == 'FNA'" />
+    <None Include="../../../LICENSE.TXT" Link="DigitalRune-LICENSE.TXT" CopyToOutputDirectory="PreserveNewest" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="$(MonoGameVersion)" Condition="'$(GraphicsBackend)' == 'MonoGame'" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <AssemblyName>DigitalRune.Mathematics</AssemblyName>
+    <RootNamespace>DigitalRune.Mathematics</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>$(DefineConstants);TRACE;XNA</DefineConstants>
+    <NoWarn>$(NoWarn);SYSLIB0003;SYSLIB0050;SYSLIB0051</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Design/NamespaceDoc.cs">
+      <Link>Algebra/Design/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Design/QuaternionDConverter.cs">
+      <Link>Algebra/Design/QuaternionDConverter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Design/QuaternionFConverter.cs">
+      <Link>Algebra/Design/QuaternionFConverter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Design/Vector2DConverter.cs">
+      <Link>Algebra/Design/Vector2DConverter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Design/Vector2FConverter.cs">
+      <Link>Algebra/Design/Vector2FConverter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Design/Vector3DConverter.cs">
+      <Link>Algebra/Design/Vector3DConverter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Design/Vector3FConverter.cs">
+      <Link>Algebra/Design/Vector3FConverter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Design/Vector4DConverter.cs">
+      <Link>Algebra/Design/Vector4DConverter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Design/Vector4FConverter.cs">
+      <Link>Algebra/Design/Vector4FConverter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/GaussSeidelMethodD.cs">
+      <Link>Algebra/GaussSeidelMethodD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/GaussSeidelMethodF.cs">
+      <Link>Algebra/GaussSeidelMethodF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/IterativeLinearSystemSolverD.cs">
+      <Link>Algebra/IterativeLinearSystemSolverD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/IterativeLinearSystemSolverF.cs">
+      <Link>Algebra/IterativeLinearSystemSolverF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/JacobiMethodD.cs">
+      <Link>Algebra/JacobiMethodD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/JacobiMethodF.cs">
+      <Link>Algebra/JacobiMethodF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Matrix22D.cs">
+      <Link>Algebra/Matrix22D.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Matrix22F.cs">
+      <Link>Algebra/Matrix22F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Matrix33D.cs">
+      <Link>Algebra/Matrix33D.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Matrix33F.cs">
+      <Link>Algebra/Matrix33F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Matrix44D.cs">
+      <Link>Algebra/Matrix44D.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Matrix44F.cs">
+      <Link>Algebra/Matrix44F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixD.cs">
+      <Link>Algebra/MatrixD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixDecompositions/CholeskyDecompositionD.cs">
+      <Link>Algebra/MatrixDecompositions/CholeskyDecompositionD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixDecompositions/CholeskyDecompositionF.cs">
+      <Link>Algebra/MatrixDecompositions/CholeskyDecompositionF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixDecompositions/EigenvalueDecompositionD.cs">
+      <Link>Algebra/MatrixDecompositions/EigenvalueDecompositionD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixDecompositions/EigenvalueDecompositionF.cs">
+      <Link>Algebra/MatrixDecompositions/EigenvalueDecompositionF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixDecompositions/LUDecompositionD.cs">
+      <Link>Algebra/MatrixDecompositions/LUDecompositionD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixDecompositions/LUDecompositionF.cs">
+      <Link>Algebra/MatrixDecompositions/LUDecompositionF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixDecompositions/QRDecompositionD.cs">
+      <Link>Algebra/MatrixDecompositions/QRDecompositionD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixDecompositions/QRDecompositionF.cs">
+      <Link>Algebra/MatrixDecompositions/QRDecompositionF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixDecompositions/SingularValueDecompositionD.cs">
+      <Link>Algebra/MatrixDecompositions/SingularValueDecompositionD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixDecompositions/SingularValueDecompositionF.cs">
+      <Link>Algebra/MatrixDecompositions/SingularValueDecompositionF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixF.cs">
+      <Link>Algebra/MatrixF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/MatrixOrder.cs">
+      <Link>Algebra/MatrixOrder.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/NamespaceDoc.cs">
+      <Link>Algebra/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/QuaternionD.cs">
+      <Link>Algebra/QuaternionD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/QuaternionF.cs">
+      <Link>Algebra/QuaternionF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/SorMethodD.cs">
+      <Link>Algebra/SorMethodD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/SorMethodF.cs">
+      <Link>Algebra/SorMethodF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Vector2D.cs">
+      <Link>Algebra/Vector2D.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Vector2F.cs">
+      <Link>Algebra/Vector2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Vector3D.cs">
+      <Link>Algebra/Vector3D.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Vector3F.cs">
+      <Link>Algebra/Vector3F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Vector4D.cs">
+      <Link>Algebra/Vector4D.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/Vector4F.cs">
+      <Link>Algebra/Vector4F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/VectorD.cs">
+      <Link>Algebra/VectorD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Algebra/VectorF.cs">
+      <Link>Algebra/VectorF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/BisectionMethodD.cs">
+      <Link>Analysis/BisectionMethodD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/BisectionMethodF.cs">
+      <Link>Analysis/BisectionMethodF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/ExplicitEulerIntegratorD.cs">
+      <Link>Analysis/ExplicitEulerIntegratorD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/ExplicitEulerIntegratorF.cs">
+      <Link>Analysis/ExplicitEulerIntegratorF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/FastFourierTransformD.cs">
+      <Link>Analysis/FastFourierTransformD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/FastFourierTransformF.cs">
+      <Link>Analysis/FastFourierTransformF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/ImprovedNewtonRaphsonMethodD.cs">
+      <Link>Analysis/ImprovedNewtonRaphsonMethodD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/ImprovedNewtonRaphsonMethodF.cs">
+      <Link>Analysis/ImprovedNewtonRaphsonMethodF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/IntegratorD.cs">
+      <Link>Analysis/IntegratorD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/IntegratorF.cs">
+      <Link>Analysis/IntegratorF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/MidpointIntegratorD.cs">
+      <Link>Analysis/MidpointIntegratorD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/MidpointIntegratorF.cs">
+      <Link>Analysis/MidpointIntegratorF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/NamespaceDoc.cs">
+      <Link>Analysis/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/NewtonRaphsonMethodD.cs">
+      <Link>Analysis/NewtonRaphsonMethodD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/NewtonRaphsonMethodF.cs">
+      <Link>Analysis/NewtonRaphsonMethodF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/OdeIntegratorD.cs">
+      <Link>Analysis/OdeIntegratorD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/OdeIntegratorF.cs">
+      <Link>Analysis/OdeIntegratorF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/RegulaFalsiMethodD.cs">
+      <Link>Analysis/RegulaFalsiMethodD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/RegulaFalsiMethodF.cs">
+      <Link>Analysis/RegulaFalsiMethodF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/RombergIntegratorD.cs">
+      <Link>Analysis/RombergIntegratorD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/RombergIntegratorF.cs">
+      <Link>Analysis/RombergIntegratorF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/RootFinderD.cs">
+      <Link>Analysis/RootFinderD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/RootFinderF.cs">
+      <Link>Analysis/RootFinderF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/RungeKutta4IntegratorD.cs">
+      <Link>Analysis/RungeKutta4IntegratorD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/RungeKutta4IntegratorF.cs">
+      <Link>Analysis/RungeKutta4IntegratorF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/SimpsonIntegratorD.cs">
+      <Link>Analysis/SimpsonIntegratorD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/SimpsonIntegratorF.cs">
+      <Link>Analysis/SimpsonIntegratorF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/TrapezoidalIntegratorD.cs">
+      <Link>Analysis/TrapezoidalIntegratorD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Analysis/TrapezoidalIntegratorF.cs">
+      <Link>Analysis/TrapezoidalIntegratorF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/ConstantsD.cs">
+      <Link>ConstantsD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/ConstantsF.cs">
+      <Link>ConstantsF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Curve2FReader.cs">
+      <Link>Content Pipeline/Curve2FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/CurveKey2FReader.cs">
+      <Link>Content Pipeline/CurveKey2FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Matrix22DReader.cs">
+      <Link>Content Pipeline/Matrix22DReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Matrix22FReader.cs">
+      <Link>Content Pipeline/Matrix22FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Matrix33DReader.cs">
+      <Link>Content Pipeline/Matrix33DReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Matrix33FReader.cs">
+      <Link>Content Pipeline/Matrix33FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Matrix44DReader.cs">
+      <Link>Content Pipeline/Matrix44DReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Matrix44FReader.cs">
+      <Link>Content Pipeline/Matrix44FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/MatrixDReader.cs">
+      <Link>Content Pipeline/MatrixDReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/MatrixFReader.cs">
+      <Link>Content Pipeline/MatrixFReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/NamespaceDoc.cs">
+      <Link>Content Pipeline/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Path2FReader.cs">
+      <Link>Content Pipeline/Path2FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Path3FReader.cs">
+      <Link>Content Pipeline/Path3FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/PathKey2FReader.cs">
+      <Link>Content Pipeline/PathKey2FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/PathKey3FReader.cs">
+      <Link>Content Pipeline/PathKey3FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/QuaternionDReader.cs">
+      <Link>Content Pipeline/QuaternionDReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/QuaternionFReader.cs">
+      <Link>Content Pipeline/QuaternionFReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Vector2DReader.cs">
+      <Link>Content Pipeline/Vector2DReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Vector2FReader.cs">
+      <Link>Content Pipeline/Vector2FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Vector3DReader.cs">
+      <Link>Content Pipeline/Vector3DReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Vector3FReader.cs">
+      <Link>Content Pipeline/Vector3FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Vector4DReader.cs">
+      <Link>Content Pipeline/Vector4DReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/Vector4FReader.cs">
+      <Link>Content Pipeline/Vector4FReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/VectorDReader.cs">
+      <Link>Content Pipeline/VectorDReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Content Pipeline/VectorFReader.cs">
+      <Link>Content Pipeline/VectorFReader.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/ArcSegment2F.cs">
+      <Link>Interpolation/ArcSegment2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/BSplineSegment1F.cs">
+      <Link>Interpolation/BSplineSegment1F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/BSplineSegment2F.cs">
+      <Link>Interpolation/BSplineSegment2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/BSplineSegment3F.cs">
+      <Link>Interpolation/BSplineSegment3F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/BezierSegment1F.cs">
+      <Link>Interpolation/BezierSegment1F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/BezierSegment2F.cs">
+      <Link>Interpolation/BezierSegment2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/BezierSegment3F.cs">
+      <Link>Interpolation/BezierSegment3F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/CardinalSegment1F.cs">
+      <Link>Interpolation/CardinalSegment1F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/CardinalSegment2F.cs">
+      <Link>Interpolation/CardinalSegment2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/CardinalSegment3F.cs">
+      <Link>Interpolation/CardinalSegment3F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/CatmullRomSegment1F.cs">
+      <Link>Interpolation/CatmullRomSegment1F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/CatmullRomSegment2F.cs">
+      <Link>Interpolation/CatmullRomSegment2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/CatmullRomSegment3F.cs">
+      <Link>Interpolation/CatmullRomSegment3F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/Curve2F.cs">
+      <Link>Interpolation/Curve2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/CurveHelper.cs">
+      <Link>Interpolation/CurveHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/CurveHelper_Flatten.cs">
+      <Link>Interpolation/CurveHelper_Flatten.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/CurveKey.cs">
+      <Link>Interpolation/CurveKey.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/CurveKey2F.cs">
+      <Link>Interpolation/CurveKey2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/CurveLoopType.cs">
+      <Link>Interpolation/CurveLoopType.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/HermiteSegment1F.cs">
+      <Link>Interpolation/HermiteSegment1F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/HermiteSegment2F.cs">
+      <Link>Interpolation/HermiteSegment2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/HermiteSegment3F.cs">
+      <Link>Interpolation/HermiteSegment3F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/ICurve.cs">
+      <Link>Interpolation/ICurve.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/InterpolationHelper.cs">
+      <Link>Interpolation/InterpolationHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/LineSegment1F.cs">
+      <Link>Interpolation/LineSegment1F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/LineSegment2F.cs">
+      <Link>Interpolation/LineSegment2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/LineSegment3F.cs">
+      <Link>Interpolation/LineSegment3F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/NamespaceDoc.cs">
+      <Link>Interpolation/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/Path2F.cs">
+      <Link>Interpolation/Path2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/Path3F.cs">
+      <Link>Interpolation/Path3F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/PathKey2F.cs">
+      <Link>Interpolation/PathKey2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/PathKey3F.cs">
+      <Link>Interpolation/PathKey3F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/PiecewiseCurve.cs">
+      <Link>Interpolation/PiecewiseCurve.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/PiecewiseCurveF.cs">
+      <Link>Interpolation/PiecewiseCurveF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/RadialBasisRegressionF.cs">
+      <Link>Interpolation/RadialBasisRegressionF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/ScatteredInterpolationF.cs">
+      <Link>Interpolation/ScatteredInterpolationF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/ShepardInterpolationF.cs">
+      <Link>Interpolation/ShepardInterpolationF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/SplineInterpolation.cs">
+      <Link>Interpolation/SplineInterpolation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/StepInterpolation.cs">
+      <Link>Interpolation/StepInterpolation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/StepSegment1F.cs">
+      <Link>Interpolation/StepSegment1F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/StepSegment2F.cs">
+      <Link>Interpolation/StepSegment2F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Interpolation/StepSegment3F.cs">
+      <Link>Interpolation/StepSegment3F.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/MathHelper.cs">
+      <Link>MathHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/MathematicsException.cs">
+      <Link>MathematicsException.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Properties/AssemblyInfo.cs">
+      <Link>Properties/AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/BoxDistribution.cs">
+      <Link>Statistics/BoxDistribution.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/CircleDistribution.cs">
+      <Link>Statistics/CircleDistribution.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/ConstValueDistribution.cs">
+      <Link>Statistics/ConstValueDistribution.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/DirectionDistribution.cs">
+      <Link>Statistics/DirectionDistribution.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/Distribution.cs">
+      <Link>Statistics/Distribution.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/GaussianDistributionD.cs">
+      <Link>Statistics/GaussianDistributionD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/GaussianDistributionF.cs">
+      <Link>Statistics/GaussianDistributionF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/Int32UniformDistribution.cs">
+      <Link>Statistics/Int32UniformDistribution.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/LineSegmentDistribution.cs">
+      <Link>Statistics/LineSegmentDistribution.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/NamespaceDoc.cs">
+      <Link>Statistics/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/PerlinNoise.cs">
+      <Link>Statistics/PerlinNoise.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/PrincipalComponentAnalysisD.cs">
+      <Link>Statistics/PrincipalComponentAnalysisD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/PrincipalComponentAnalysisF.cs">
+      <Link>Statistics/PrincipalComponentAnalysisF.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/RandomHelper.cs">
+      <Link>Statistics/RandomHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/SphereDistribution.cs">
+      <Link>Statistics/SphereDistribution.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/StatisticsHelper.cs">
+      <Link>Statistics/StatisticsHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/UniformDistributionD.cs">
+      <Link>Statistics/UniformDistributionD.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune.Mathematics/Statistics/UniformDistributionF.cs">
+      <Link>Statistics/UniformDistributionF.cs</Link>
+    </Compile>
+    <ProjectReference Include="../DigitalRune/DigitalRune.csproj" />
+    <ProjectReference Include="$(FnaProject)" Condition="'$(GraphicsBackend)' == 'FNA'" />
+    <None Include="../../../LICENSE.TXT" Link="DigitalRune-LICENSE.TXT" CopyToOutputDirectory="PreserveNewest" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="$(MonoGameVersion)" Condition="'$(GraphicsBackend)' == 'MonoGame'" />
+  </ItemGroup>
+</Project>

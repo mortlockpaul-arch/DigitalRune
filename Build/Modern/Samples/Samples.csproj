@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net9.0-windows</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>disable</Nullable><EnableDefaultCompileItems>true</EnableDefaultCompileItems></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../DigitalRune.Physics/DigitalRune.Physics.csproj" />
+    <ProjectReference Include="../DigitalRune.Mathematics/DigitalRune.Mathematics.csproj" />
+    <ProjectReference Include="$(FnaProject)" Condition="'$(GraphicsBackend)' == 'FNA'" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="$(MonoGameVersion)" Condition="'$(GraphicsBackend)' == 'MonoGame'" />
+    <Compile Include="../../../Samples/Samples/Samples/Mathematics/01-BasicMathSample.cs" Link="BuiltIn/01-BasicMathSample.cs" />
+    <Compile Include="../../../Samples/Samples/Samples/Physics/01-BoxStackSample.cs" Link="BuiltIn/01-BoxStackSample.cs" />
+    <None Include="../../../LICENSE.TXT" Link="DigitalRune-LICENSE.TXT" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(GraphicsBackend)' == 'FNA'">
+    <None Include="../../../../SDL3/lib/x64/SDL3.dll;../../../../FNA.Contents/x64/FNA3D.dll;../../../../FNA.Contents/x64/FAudio.dll" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
+

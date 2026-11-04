@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <AssemblyName>DigitalRune</AssemblyName>
+    <RootNamespace>DigitalRune</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>$(DefineConstants);TRACE;WINDOWS;DLL_PROJECT;DOTNET;DIGITALRUNE;AESCRYPTO</DefineConstants>
+    <NoWarn>$(NoWarn);SYSLIB0003;SYSLIB0050;SYSLIB0051</NoWarn>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../../Source/DigitalRune/Animation/IAnimatableObject.cs">
+      <Link>Animation/IAnimatableObject.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Animation/IAnimatableProperty.cs">
+      <Link>Animation/IAnimatableProperty.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Animation/NamespaceDoc.cs">
+      <Link>Animation/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/ArrayList.cs">
+      <Link>Collections/ArrayList.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/ChildCollection.cs">
+      <Link>Collections/ChildCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/CollectionChangedAction.cs">
+      <Link>Collections/CollectionChangedAction.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/CollectionChangedEventArgs.cs">
+      <Link>Collections/CollectionChangedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/CollectionDebugView.cs">
+      <Link>Collections/CollectionDebugView.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/CollectionHelper.cs">
+      <Link>Collections/CollectionHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/DelegateComparer.cs">
+      <Link>Collections/DelegateComparer.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/Deque.cs">
+      <Link>Collections/Deque.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/EmptyEnumerable.cs">
+      <Link>Collections/EmptyEnumerable.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/FastBitArray.cs">
+      <Link>Collections/FastBitArray.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/FastStack.cs">
+      <Link>Collections/FastStack.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/HashSetEx.cs">
+      <Link>Collections/HashSetEx.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/ListHelper.cs">
+      <Link>Collections/ListHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/NamedObjectCollection.cs">
+      <Link>Collections/NamedObjectCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/NamespaceDoc.cs">
+      <Link>Collections/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/NotifyingCollection.cs">
+      <Link>Collections/NotifyingCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/Pair1.cs">
+      <Link>Collections/Pair1.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/Pair2.cs">
+      <Link>Collections/Pair2.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/PooledEnumerable.cs">
+      <Link>Collections/PooledEnumerable.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/PriorityQueue.cs">
+      <Link>Collections/PriorityQueue.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/ReadOnlyWeakCollection.cs">
+      <Link>Collections/ReadOnlyWeakCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/SynchronizedHashtable.cs">
+      <Link>Collections/SynchronizedHashtable.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/SynchronizedNotifyingCollection.cs">
+      <Link>Collections/SynchronizedNotifyingCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Collections/WeakCollection.cs">
+      <Link>Collections/WeakCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Diagnostics/Hierarchical/HierarchicalProfiler.cs">
+      <Link>Diagnostics/Hierarchical/HierarchicalProfiler.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Diagnostics/Hierarchical/HierarchicalProfilerNode.cs">
+      <Link>Diagnostics/Hierarchical/HierarchicalProfilerNode.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Diagnostics/Hierarchical/HierarchicalProfilerSample.cs">
+      <Link>Diagnostics/Hierarchical/HierarchicalProfilerSample.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Diagnostics/NamespaceDoc.cs">
+      <Link>Diagnostics/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Diagnostics/ProfileFormatter.cs">
+      <Link>Diagnostics/ProfileFormatter.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Diagnostics/Simple/Profiler.cs">
+      <Link>Diagnostics/Simple/Profiler.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Diagnostics/Simple/ProfilerData.cs">
+      <Link>Diagnostics/Simple/ProfilerData.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Diagnostics/Simple/ProfilerDataCollection.cs">
+      <Link>Diagnostics/Simple/ProfilerDataCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Diagnostics/Simple/ProfilerDataFormat.cs">
+      <Link>Diagnostics/Simple/ProfilerDataFormat.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Diagnostics/Simple/ProfilerSample.cs">
+      <Link>Diagnostics/Simple/ProfilerSample.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Diagnostics/Stopwatch.cs">
+      <Link>Diagnostics/Stopwatch.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/EnumHelper.cs">
+      <Link>EnumHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/GlobalSettings.cs">
+      <Link>GlobalSettings.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/INamedObjects.cs">
+      <Link>INamedObjects.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Crc/CRC32.cs">
+      <Link>Ionic/Crc/CRC32.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Encoding/Iso8859Dash1Encoding.cs">
+      <Link>Ionic/Encoding/Iso8859Dash1Encoding.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/EncryptionAlgorithm.cs">
+      <Link>Ionic/Zip/EncryptionAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/Exceptions.cs">
+      <Link>Ionic/Zip/Exceptions.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/OffsetStream.cs">
+      <Link>Ionic/Zip/OffsetStream.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/Shared.cs">
+      <Link>Ionic/Zip/Shared.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/WinZipAes.cs">
+      <Link>Ionic/Zip/WinZipAes.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/ZipConstants.cs">
+      <Link>Ionic/Zip/ZipConstants.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/ZipCrypto.cs">
+      <Link>Ionic/Zip/ZipCrypto.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/ZipDirEntry.cs">
+      <Link>Ionic/Zip/ZipDirEntry.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/ZipEntry.Extract.cs">
+      <Link>Ionic/Zip/ZipEntry.Extract.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/ZipEntry.Read.cs">
+      <Link>Ionic/Zip/ZipEntry.Read.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/ZipEntry.cs">
+      <Link>Ionic/Zip/ZipEntry.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/ZipEntrySource.cs">
+      <Link>Ionic/Zip/ZipEntrySource.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/ZipFile.Read.cs">
+      <Link>Ionic/Zip/ZipFile.Read.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/ZipFile.cs">
+      <Link>Ionic/Zip/ZipFile.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/ZipFile.x-IEnumerable.cs">
+      <Link>Ionic/Zip/ZipFile.x-IEnumerable.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zip/ZipOutputStream.cs">
+      <Link>Ionic/Zip/ZipOutputStream.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zlib/DeflateStream.cs">
+      <Link>Ionic/Zlib/DeflateStream.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zlib/GZipStream.cs">
+      <Link>Ionic/Zlib/GZipStream.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zlib/InfTree.cs">
+      <Link>Ionic/Zlib/InfTree.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zlib/Inflate.cs">
+      <Link>Ionic/Zlib/Inflate.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zlib/Zlib.cs">
+      <Link>Ionic/Zlib/Zlib.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zlib/ZlibBaseStream.cs">
+      <Link>Ionic/Zlib/ZlibBaseStream.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zlib/ZlibCodec.cs">
+      <Link>Ionic/Zlib/ZlibCodec.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Ionic/Zlib/ZlibConstants.cs">
+      <Link>Ionic/Zlib/ZlibConstants.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Licensing/Licensing.cs">
+      <Link>Licensing/Licensing.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Linq/LinqHelper.cs">
+      <Link>Linq/LinqHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Linq/NamespaceDoc.cs">
+      <Link>Linq/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Linq/TreeHelper.cs">
+      <Link>Linq/TreeHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Mathematics/NamespaceDoc.cs">
+      <Link>Mathematics/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Mathematics/Numeric.cs">
+      <Link>Mathematics/Numeric.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/NamespaceDoc.cs">
+      <Link>NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/NativeMethods.cs">
+      <Link>NativeMethods.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/ObjectHelper.cs">
+      <Link>ObjectHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/PlatformHelper.cs">
+      <Link>PlatformHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/PlatformID.cs">
+      <Link>PlatformID.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Portable.cs">
+      <Link>Portable.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/PrimeHelper.cs">
+      <Link>PrimeHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Properties/AssemblyInfo.cs">
+      <Link>Properties/AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/ReferenceEqualityComparer.cs">
+      <Link>ReferenceEqualityComparer.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/ResourcePools/IRecyclable.cs">
+      <Link>ResourcePools/IRecyclable.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/ResourcePools/ResourcePool.cs">
+      <Link>ResourcePools/ResourcePool.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/ResourcePools/ResourcePools{T}.cs">
+      <Link>ResourcePools/ResourcePools{T}.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/ResourcePools/ResourcePool{T}.cs">
+      <Link>ResourcePools/ResourcePool{T}.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Singleton.cs">
+      <Link>Singleton.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/FileAccess.cs">
+      <Link>Storages/FileAccess.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/FileAttributes.cs">
+      <Link>Storages/FileAttributes.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/FileMode.cs">
+      <Link>Storages/FileMode.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/FileOptions.cs">
+      <Link>Storages/FileOptions.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/FileShare.cs">
+      <Link>Storages/FileShare.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/FileSystemStorage.cs">
+      <Link>Storages/FileSystemStorage.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/IStorage.cs">
+      <Link>Storages/IStorage.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/IStorageProvider.cs">
+      <Link>Storages/IStorageProvider.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/NamespaceDoc.cs">
+      <Link>Storages/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/Path.cs">
+      <Link>Storages/Path.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/Storage.cs">
+      <Link>Storages/Storage.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/StorageHelper.cs">
+      <Link>Storages/StorageHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/VfsMountInfo.cs">
+      <Link>Storages/VfsMountInfo.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/VfsMountInfoCollection.cs">
+      <Link>Storages/VfsMountInfoCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/VfsStorage.cs">
+      <Link>Storages/VfsStorage.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Storages/ZipStorage.cs">
+      <Link>Storages/ZipStorage.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/System/Collection.cs">
+      <Link>System/Collection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/System/HashSet.cs">
+      <Link>System/HashSet.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/System/KeyedCollection.cs">
+      <Link>System/KeyedCollection.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Text/NamespaceDoc.cs">
+      <Link>Text/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Text/StringBuilderHelper.cs">
+      <Link>Text/StringBuilderHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Text/StringHelper.cs">
+      <Link>Text/StringHelper.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/BackgroundWorker.cs">
+      <Link>Threading/BackgroundWorker.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/DelegateWork.cs">
+      <Link>Threading/DelegateWork.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/ITaskScheduler.cs">
+      <Link>Threading/ITaskScheduler.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/IWork.cs">
+      <Link>Threading/IWork.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/LoopWork.cs">
+      <Link>Threading/LoopWork.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/NamespaceDoc.cs">
+      <Link>Threading/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/Parallel.cs">
+      <Link>Threading/Parallel.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/Parallel_Win8.cs">
+      <Link>Threading/Parallel_Win8.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/Task.cs">
+      <Link>Threading/Task.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/TaskException.cs">
+      <Link>Threading/TaskException.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/Task_Win8.cs">
+      <Link>Threading/Task_Win8.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/Task{T}.cs">
+      <Link>Threading/Task{T}.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/Task{T}_Win8.cs">
+      <Link>Threading/Task{T}_Win8.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/WorkItem.cs">
+      <Link>Threading/WorkItem.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/WorkOptions.cs">
+      <Link>Threading/WorkOptions.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/WorkStealingQueue.cs">
+      <Link>Threading/WorkStealingQueue.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/WorkStealingScheduler.cs">
+      <Link>Threading/WorkStealingScheduler.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Threading/Worker.cs">
+      <Link>Threading/Worker.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Undo/IUndoableOperation.cs">
+      <Link>Undo/IUndoableOperation.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Undo/NamespaceDoc.cs">
+      <Link>Undo/NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Undo/UndoBuffer.cs">
+      <Link>Undo/UndoBuffer.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/Undo/UndoGroup.cs">
+      <Link>Undo/UndoGroup.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/WeakEvents/InternalWeakDelegate.cs">
+      <Link>WeakEvents/InternalWeakDelegate.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/WeakEvents/WeakDelegate.cs">
+      <Link>WeakEvents/WeakDelegate.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/WeakEvents/WeakDelegate{T}.cs">
+      <Link>WeakEvents/WeakDelegate{T}.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/WeakEvents/WeakEvent.cs">
+      <Link>WeakEvents/WeakEvent.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/WeakEvents/WeakEventHandler.cs">
+      <Link>WeakEvents/WeakEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/WeakEvents/WeakMulticastDelegate.cs">
+      <Link>WeakEvents/WeakMulticastDelegate.cs</Link>
+    </Compile>
+    <Compile Include="../../../Source/DigitalRune/WeakEvents/WeakMulticastDelegate{T}.cs">
+      <Link>WeakEvents/WeakMulticastDelegate{T}.cs</Link>
+    </Compile>
+    <None Include="../../../LICENSE.TXT" Link="DigitalRune-LICENSE.TXT" CopyToOutputDirectory="PreserveNewest" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="8.1.2" />
+  </ItemGroup>
+</Project>
