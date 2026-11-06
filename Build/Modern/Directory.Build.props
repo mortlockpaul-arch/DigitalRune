@@ -2,7 +2,7 @@
   <PropertyGroup>
     <GraphicsBackend Condition="'$(GraphicsBackend)' == ''">FNA</GraphicsBackend>
     <MonoGameVersion Condition="'$(MonoGameVersion)' == ''">3.8.4.1</MonoGameVersion>
-    <FnaProject Condition="'$(FnaProject)' == ''">$(MSBuildThisFileDirectory)..\..\..\FNA\FNA.csproj</FnaProject>
+    <FnaProject Condition="'$(FnaProject)' == ''">$(MSBuildThisFileDirectory)..\..\..\FNA\FNA.Core.csproj</FnaProject>
     <BaseIntermediateOutputPath>obj\$(GraphicsBackend)\</BaseIntermediateOutputPath>
     <BaseOutputPath>bin\$(GraphicsBackend)\</BaseOutputPath>
     <DefaultItemExcludes>$(DefaultItemExcludes);obj\**;bin\**</DefaultItemExcludes>
